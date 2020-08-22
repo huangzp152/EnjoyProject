@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //涉及资源，暂时注视
-//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
         Log.i("hzp", "我是宿主activity");
         Button button = new Button(this);
         FanxingTest.fanxingTest();

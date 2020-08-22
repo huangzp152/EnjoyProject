@@ -1,5 +1,7 @@
 package com.example.myapplication.fanxing;
 
+import android.util.Log;
+
 import com.example.myapplication.MainActivity;
 
 import java.util.ArrayList;
@@ -7,6 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class FanxingTest {
+    private final static String TAG = "FanxingTest";
     public static void fanxingTest() {
         List<Banana> scr1 = new ArrayList<>();
         scr1.add(new Banana(1));
@@ -15,6 +18,8 @@ public class FanxingTest {
         dest1.add(new Banana(1));
 
         FanxingTest.<Fruit>copy1(dest1, scr1);//可以灵活转型
+        Log.d(TAG, "good:" + dest1.size());
+
 
     }
 
