@@ -7,7 +7,7 @@ import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.ContextThemeWrapper;
-ß
+
 import androidx.annotation.Nullable;
 
 import java.lang.reflect.Field;

@@ -13,7 +13,7 @@ public class LoadUtils {
         try {
             AssetManager assetManager = AssetManager.class.newInstance();
             //2.从插件加载资源 （反射）
-            Method addAssetPathMethod = assetManager.getClass().getDeclaredMethod("addAssetPath", String.c);
+            Method addAssetPathMethod = assetManager.getClass().getDeclaredMethod("addAssetPath", String.class);
             //反射获取的名字.invoke(对象实例，参数）
             addAssetPathMethod.invoke(assetManager, apkPath);
             //3。创建resource对象返回给插件
