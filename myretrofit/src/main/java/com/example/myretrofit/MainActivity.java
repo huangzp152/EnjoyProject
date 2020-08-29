@@ -16,7 +16,17 @@ public class MainActivity extends AppCompatActivity {
 
         //可以自己撸的retrofit
         //涉及到反射 动态代理 注解
+        //调用
         EnjoyRetrofit retrofit = new EnjoyRetrofit.Builder().baseUrl("https://restapi.amap.com").build();
         EnjoyWeatherApi weatherApi = retrofit.create(EnjoyWeatherApi.class);
+    }
+
+    public void post() {
+
+
+    }
+
+    public void get() {
+
     }
 }
